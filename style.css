@@ -38,12 +38,11 @@ main.content {
 
 /* Style for the filter container */
 .filter-container {
-  width: 250px;               /* Fixed width for the filter section */
-  background-color: #f0f0f0;  /* Light gray background */
-  padding: 20px;              /* Add padding inside the filter box */
-  margin-right: 20px;         /* Space between the filter box and the posts */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  border-radius: 8px;         /* Rounded corners for a cleaner look */
+  background-color: lightgray;
+  padding: 20px;               /* Padding inside the filter container */
+  margin-left: 20px;            /* Space between the filter box and the left side of the screen */
+  margin-top: 20px;             /* Space between the filter box and the header */
+  max-width: 250px;             /* Set a max width so it doesn't stretch too wide */
 }
 
 /* Limit the height of the filter container's condition box */
