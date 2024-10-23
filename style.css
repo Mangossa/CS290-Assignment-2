@@ -59,11 +59,12 @@ main.content {
   align-items: center;    /* Vertically center the items */
 }
 
+/* Style for each input element */
 .filter-input-element {
   margin-right: 10px;     /* Space between the min and max input boxes */
 }
 
-/* Optional: To ensure inputs are of equal size */
+/* Adjust input fields for smaller width */
 .filter-input {
-  width: 80px;            /* Adjust as needed for consistent width */
+  width: 60px;            /* Smaller width for the input fields */
 }
