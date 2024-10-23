@@ -11,19 +11,16 @@ header {
     margin-bottom: 20px;
 }
 
+/* Image container adjustments */
 .header-image-container img {
-    width: 150px;
-    border-radius: 50%;
+  max-width: 100px;   /* Adjust the size of the image */
+  height: auto;       /* Maintain image aspect ratio */
+  margin-right: 20px; /* Space between the image and the text */
 }
 
-.site-title {
-    font-family: 'Roboto Slab', serif;
-    font-weight: 700;
-    font-size: 32px;
-    margin: 10px 0;
-}
-
+/* Style the title */
 .site-title a {
-    text-decoration: none;
-    color: #333;
+  color: white;        /* Text color for the link */
+  text-decoration: none; /* Removes the underline */
+  font-size: 24px;      /* Adjust font size */
 }
