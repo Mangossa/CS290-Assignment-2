@@ -53,10 +53,12 @@ main.content {
   border: 1px solid #ccc; /* Add a border to the fieldset */
   margin-top: 10px;    /* Add some space between the fieldset and other filter items */
 }
+/**/
 /* Style for the filter input container */
 .filter-input-container {
   display: flex;          /* Use flexbox to align items */
   align-items: center;    /* Vertically center the items */
+  margin-bottom: 15px;    /* Space below each input container */
 }
 
 /* Style for each input element */
@@ -67,4 +69,9 @@ main.content {
 /* Adjust input fields for smaller width */
 .filter-input {
   width: 60px;            /* Smaller width for the input fields */
+}
+
+/* Style for filter input labels */
+.filter-input-label {
+  margin-right: 10px;     /* Space between the label and input box */
 }
