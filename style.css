@@ -29,21 +29,27 @@ header {
   font-size: 48px;      /* Adjust font size */
 }
 
-/* Ensure the entire main content is displayed as a flexbox container */
+* Main content area with flex layout */
 main.content {
   display: flex;
+  margin-left: 20px; /* Add space between the filter container and the left side of the screen */
 }
 
 /* Style for the filter container */
 .filter-container {
-  width: 250px;               /* Set a fixed width for the filter section */
+  width: 250px;               /* Fixed width for the filter section */
   background-color: #f0f0f0;  /* Light gray background */
-  padding: 20px;              /* Add some padding inside the filter box */
-  margin-right: 20px;         /* Space between the filter box and the rest of the content */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for separation */
+  padding: 20px;              /* Add padding inside the filter box */
+  margin-right: 20px;         /* Space between the filter box and the posts */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border-radius: 8px;         /* Rounded corners for a cleaner look */
 }
 
-/* Posts container will take the remaining space to the right of the filter */
-#posts {
-  flex-grow: 1;               /* Makes the posts container expand to take up remaining space */
+/* Limit the height of the filter container's condition box */
+.filter-fieldset {
+  max-height: 200px;   /* Set a maximum height for the fieldset */
+  overflow-y: auto;    /* Allow scrolling if the content overflows */
+  padding: 10px;       /* Add padding inside the fieldset */
+  border: 1px solid #ccc; /* Add a border to the fieldset */
+  margin-top: 10px;    /* Add some space between the fieldset and other filter items */
 }
