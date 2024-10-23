@@ -53,3 +53,15 @@ main.content {
   border: 1px solid #ccc; /* Add a border to the fieldset */
   margin-top: 10px;    /* Add some space between the fieldset and other filter items */
 }
+/* Adjust spacing between min and max price inputs */
+.filter-input-element {
+  display: inline-block; /* Make each input display inline to sit next to each other */
+}
+
+#filter-min-price {
+  margin-right: 10px; /* Space between the min and max inputs */
+}
+
+.filter-input-element input {
+  width: 100px; /* Ensure inputs have a consistent width */
+}
