@@ -7,8 +7,11 @@ body {
 }
 
 header {
-    text-align: center;
-    margin-bottom: 20px;
+  display: flex;
+  align-items: center;      /* Vertically centers items */
+  background-color: black;  /* Black box background */
+  padding: 20px;            /* Adds some padding inside the box */
+  color: white;             /* Ensures the text color is white */
 }
 
 /* Image container adjustments */
