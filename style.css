@@ -40,8 +40,8 @@ main.content {
 .filter-container {
   background-color: lightgray;
   padding: 20px;               /* Space inside the filter box (this is good) */
-  margin-left: 40px;            /* Add more space between the left side of the screen and the filter box */
-  margin-top: 30px;             /* Space between the filter box and the header */
+  margin-left: 10px;            /* Add more space between the left side of the screen and the filter box */
+  margin-top: 10px;             /* Space between the filter box and the header */
   max-width: 250px;             /* Control the width of the filter box */
 }
 
