@@ -28,3 +28,22 @@ header {
   text-decoration: none; /* Removes the underline */
   font-size: 48px;      /* Adjust font size */
 }
+
+/* Ensure the entire main content is displayed as a flexbox container */
+main.content {
+  display: flex;
+}
+
+/* Style for the filter container */
+.filter-container {
+  width: 250px;               /* Set a fixed width for the filter section */
+  background-color: #f0f0f0;  /* Light gray background */
+  padding: 20px;              /* Add some padding inside the filter box */
+  margin-right: 20px;         /* Space between the filter box and the rest of the content */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for separation */
+}
+
+/* Posts container will take the remaining space to the right of the filter */
+#posts {
+  flex-grow: 1;               /* Makes the posts container expand to take up remaining space */
+}
