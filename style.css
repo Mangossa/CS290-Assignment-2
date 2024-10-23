@@ -8,6 +8,7 @@ body {
 
 header {
   font-family: 'Roboto Slab', serif;
+  height: 80px;
   display: flex;
   align-items: center;      /* Vertically centers items */
   background-color: black;  /* Black box background */
