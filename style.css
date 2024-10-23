@@ -25,5 +25,5 @@ header {
 .site-title a {
   color: white;        /* Text color for the link */
   text-decoration: none; /* Removes the underline */
-  font-size: 24px;      /* Adjust font size */
+  font-size: 48px;      /* Adjust font size */
 }
