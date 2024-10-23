@@ -39,10 +39,10 @@ main.content {
 /* Style for the filter container */
 .filter-container {
   background-color: lightgray;
-  padding: 20px;               /* Padding inside the filter container */
-  margin-left: 20px;            /* Space between the filter box and the left side of the screen */
-  margin-top: 20px;             /* Space between the filter box and the header */
-  max-width: 250px;             /* Set a max width so it doesn't stretch too wide */
+  padding: 20px;               /* Space inside the filter box (this is good) */
+  margin-left: 40px;            /* Add more space between the left side of the screen and the filter box */
+  margin-top: 30px;             /* Space between the filter box and the header */
+  max-width: 250px;             /* Control the width of the filter box */
 }
 
 /* Limit the height of the filter container's condition box */
