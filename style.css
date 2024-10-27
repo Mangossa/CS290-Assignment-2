@@ -82,3 +82,22 @@ main.content {
   padding: 10px;             /* Adds space inside the border */
   margin-top: 10px;          /* Optional: Space above the fieldset */
 }
+/* Style for the Update button */
+#filter-update-button {
+  width: 100%;
+  max-width: 150px;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Hover effect */
+#filter-update-button:hover {
+  background-color: tan;       /* Tan background on hover */
+  color: black;                /* Black text on hover */
+  border: 1px solid black;     /* Black outline on hover */
+}
