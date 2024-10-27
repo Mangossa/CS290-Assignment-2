@@ -75,3 +75,9 @@ main.content {
 .filter-input-label {
   margin-right: 10px;     /* Space between the label and input box */
 }
+/* Style for the Condition fieldset */
+.filter-fieldset {
+  border: 1px solid black;   /* Thin black border */
+  padding: 10px;             /* Adds space inside the border */
+  margin-top: 10px;          /* Optional: Space above the fieldset */
+}
