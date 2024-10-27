@@ -48,6 +48,7 @@ main.content {
 /* Limit the height of the filter container's condition box */
 .filter-fieldset {
   max-height: 200px;   /* Set a maximum height for the fieldset */
+  width: 200px; 
   overflow-y: auto;    /* Allow scrolling if the content overflows */
   padding: 10px;       /* Add padding inside the fieldset */
   border: 1px solid #ccc; /* Add a border to the fieldset */
