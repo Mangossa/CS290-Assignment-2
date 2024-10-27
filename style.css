@@ -84,7 +84,7 @@ main.content {
 }
 /* Style for the Update button */
 #filter-update-button {
-  width: 180px;
+  width: 200px; 
   padding: 10px;
   background-color: black;
   color: white;
