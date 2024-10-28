@@ -36,13 +36,14 @@ main.content {
   margin-left: 20px; /* Add space between the filter container and the left side of the screen */
 }
 
-/* Style for the filter container */
+/* Style for the filter container with bottom border */
 .filter-container {
   background-color: lightgray;
-  padding: 20px;               /* Space inside the filter box (this is good) */
-  margin-left: 10px;            /* Add more space between the left side of the screen and the filter box */
-  margin-top: 10px;             /* Space between the filter box and the header */
-  max-width: 250px;             /* Control the width of the filter box */
+  padding: 20px;
+  margin-left: 10px;
+  margin-top: 10px;
+  max-width: 250px;
+  border-bottom: 2px solid gray; /* Add a bottom border */
 }
 
 /* Limit the height of the filter container's condition box */
@@ -138,7 +139,18 @@ main.content {
   object-fit: contain;         /* Scale the image up without cropping */
   border-radius: 5px 5px 0 0;  /* Rounded corners at the top */
 }
+/* Adds padding around the images inside each post */
+.post-image-container {
+  padding: 5px;            /* Adds space around the image */
+  background-color: white; /* Optional: Adds a background color around the image */
+  border-radius: 5px;      /* Optional: Adds rounded corners */
+  box-sizing: border-box;  /* Ensures padding is included in width calculations */
+}
 
+.post-image-container img {
+  width: 100%;   /* Ensures image fills container without distorting */
+  height: auto;  /* Maintains aspect ratio */
+}
 /* Container for post information, using flex to keep elements in one line */
 .post-info-container {
   display: flex;
@@ -172,3 +184,4 @@ main.content {
   color: gray;
   white-space: nowrap;
 }
+
