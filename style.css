@@ -91,6 +91,7 @@ main.content {
 #filter-update-button {
   width: 250px; 
   padding: 10px;
+  margin-bottom: 20px;
   background-color: black;
   color: white;
   border: none;
