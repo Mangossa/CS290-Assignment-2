@@ -139,30 +139,37 @@ main.content {
   border-radius: 5px 5px 0 0;  /* Rounded corners at the top */
 }
 
-/* Container for post information */
+/* Container for post information, using flex to keep elements in one line */
 .post-info-container {
+  display: flex;
+  align-items: center;        /* Vertically aligns items in the center */
   padding: 10px;
-  text-align: left;            /* Align text to the left */
+  text-align: left;           /* Aligns text to the left */
+  gap: 10px;                  /* Space between title, price, and city */
 }
 
-/* Style for the title, price, and city */
+/* Style for the title */
 .post-title {
   font-weight: bold;
   color: #e65c00;
   text-decoration: none;
-  display: block;
-  margin-bottom: 5px;
+  flex: 1;                    /* Title takes up available space */
+  white-space: nowrap;        /* Prevents wrapping to a new line */
+  overflow: hidden;           /* Truncates text if it’s too long */
+  text-overflow: ellipsis;    /* Adds ellipsis (…) if text is truncated */
 }
 
+/* Style for the price */
 .post-price {
   background-color: #eee;
   padding: 2px 5px;
   border-radius: 3px;
   font-weight: bold;
-  display: inline-block;
+  white-space: nowrap;
 }
 
+/* Style for the city */
 .post-city {
   color: gray;
-  margin-left: 5px;            /* Small space between price and city */
+  white-space: nowrap;
 }
