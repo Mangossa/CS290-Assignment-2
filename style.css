@@ -142,10 +142,10 @@ main.content {
 /* Container for post information, using flex to keep elements in one line */
 .post-info-container {
   display: flex;
-  align-items: center;        /* Vertically aligns items in the center */
+  align-items: center;       /* Vertically centers items */
   padding: 10px;
-  text-align: left;           /* Aligns text to the left */
-  gap: 10px;                  /* Space between title, price, and city */
+  text-align: left;          /* Aligns text to the left */
+  gap: 5px;                  /* Reduces space between title, price, and city */
 }
 
 /* Style for the title */
@@ -153,10 +153,9 @@ main.content {
   font-weight: bold;
   color: #e65c00;
   text-decoration: none;
-  flex: 1;                    /* Title takes up available space */
-  white-space: nowrap;        /* Prevents wrapping to a new line */
-  overflow: hidden;           /* Truncates text if it’s too long */
-  text-overflow: ellipsis;    /* Adds ellipsis (…) if text is truncated */
+  white-space: nowrap;       /* Prevents wrapping */
+  overflow: hidden;          /* Truncates text if it’s too long */
+  text-overflow: ellipsis;   /* Adds ellipsis (…) if text is truncated */
 }
 
 /* Style for the price */
