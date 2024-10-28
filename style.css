@@ -59,10 +59,17 @@ main.content {
 }
 
 /* Style for the filter input container */
-.filter-input-container {
-  display: flex;          /* Use flexbox to align items */
-  align-items: center;    /* Vertically center the items */
-  margin-bottom: 15px;    /* Space below each input container */
+.filter-container {
+  background-color: lightgray;
+  padding: 20px;
+  margin-left: 10px;
+  margin-top: 10px;
+  max-width: 250px;
+  height: auto;              /* Let the container adjust based on content */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align items at the top */
+  align-self: flex-start;      /* Prevents stretching in the flex container */
 }
 
 /* Style for each input element */
