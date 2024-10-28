@@ -130,11 +130,12 @@ main.content {
   flex-direction: column;
 }
 
-/* Make the image fill the width */
+/* Make the image fill the width without cropping */
 .post img {
   width: 100%;                 /* Full width of the post */
-  height: 180px;               /* Set a fixed height */
-  object-fit: cover;           /* Crop image to fit within the height */
+  height: auto;                /* Maintain original aspect ratio */
+  max-height: 180px;           /* Constrain the height, adjust as needed */
+  object-fit: contain;         /* Scale the image up without cropping */
   border-radius: 5px 5px 0 0;  /* Rounded corners at the top */
 }
 
