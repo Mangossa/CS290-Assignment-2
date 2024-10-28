@@ -109,29 +109,38 @@ main.content {
   gap: 20px;                   /* Space between filter and posts section */
 }
 
-/* Style for the posts section with grid layout */
+/* Posts section with 2-column grid layout */
 #posts {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-  padding: 10px;               /* Space around the posts grid */
+  grid-template-columns: repeat(2, 1fr); /* Force two columns */
+  gap: 20px;                             /* Space between each post */
+  padding: 10px;                         /* Space around the posts grid */
 }
 
-/* Style for each post */
+/* Style each post to be a fixed size */
 .post {
+  width: 100%;                 /* Ensures the post fills the grid cell */
+  height: 300px;               /* Set a fixed height */
   background-color: white;
   border: 1px solid #ddd;
   border-radius: 5px;
   padding: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
+  display: flex;
+  flex-direction: column;      /* Flex layout inside each post */
+  justify-content: space-between; /* Space out content vertically */
 }
 
+/* Image in each post should fill available space */
 .post img {
   max-width: 100%;
+  height: 150px;               /* Fixed height to keep images the same size */
+  object-fit: cover;           /* Crop images to fit the container */
   border-radius: 5px;
 }
 
+/* Style for the title, price, and city */
 .post-title {
   font-weight: bold;
   color: #e65c00;
