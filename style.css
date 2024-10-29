@@ -209,3 +209,22 @@ main.content {
   color: gray;
   white-space: nowrap;
 }
+
+#sell-something-button {
+  position: fixed;              /* Keeps the button fixed in the viewport */
+  bottom: 20px;                /* Distance from the bottom of the viewport */
+  right: 20px;                 /* Distance from the right of the viewport */
+  width: 60px;                 /* Width of the button (adjustable) */
+  height: 60px;                /* Height of the button (adjustable) */
+  background-color: orange;    /* Background color of the button */
+  color: white;                /* Color of the plus sign */
+  border: none;                /* Removes the default border */
+  border-radius: 50%;          /* Makes the button circular */
+  display: flex;               /* Use flexbox for centering */
+  justify-content: center;      /* Center content horizontally */
+  align-items: center;          /* Center content vertically */
+  font-size: 24px;             /* Size of the plus sign */
+  cursor: pointer;              /* Changes cursor to pointer on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow effect */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
