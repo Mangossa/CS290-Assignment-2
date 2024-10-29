@@ -177,6 +177,11 @@ main.content {
   text-overflow: ellipsis;   /* Adds ellipsis (…) if text is truncated */
 }
 
+/* Add underline on hover for the title */
+.post-title:hover {
+  text-decoration: underline;
+}
+
 /* Style for the price */
 .post-price {
   background-color: #eee;
