@@ -58,17 +58,17 @@ main.content {
   margin-top: 10px;    /* Add some space between the fieldset and other filter items */
 }
 
-/* Style for the filter input container */
-.filter-container {
-  background-color: lightgray;
-  padding: 20px;
-  margin-left: 10px;
-  margin-top: 10px;
-  max-width: 250px;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+/* Style for the Update button with bottom margin */
+#filter-update-button {
+  width: 250px;
+  padding: 10px;
+  margin-bottom: 10px;          /* Space at the bottom of the filter container */
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 /* Style for each input element */
