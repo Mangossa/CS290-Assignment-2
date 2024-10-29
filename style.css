@@ -107,87 +107,68 @@ main.content {
   gap: 20px;                   /* Space between filter and posts section */
 }
 
-/* Posts section with responsive grid layout */
+/* Posts section with a responsive grid layout */
 #posts {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
-  gap: 20px;                             /* Space between each post */
-  padding: 10px;                         /* Space around the posts grid */
+  display: grid;                           /* Use grid layout for posts */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+  gap: 20px;                               /* Space between each post */
+  padding: 10px;                           /* Space around the posts grid */
 }
 
-/* Style each post to be a fixed size */
+/* Style each post */
 .post {
-  width: 100%;                 /* Ensures the post fills the grid cell */
-  height: 350px;               /* Adjust height as needed */
-  background-color: white;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;            /* Ensures content stays within the card */
-  display: flex;
-  flex-direction: column;
+  background-color: white;                 /* Background color for each post */
+  border: 1px solid #ddd;                  /* Border around each post */
+  border-radius: 5px;                      /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  overflow: hidden;                         /* Ensures content stays within the card */
+  display: flex;                           /* Flexbox for internal layout */
+  flex-direction: column;                  /* Stack children vertically */
 }
 
 /* Make the image fill the width without cropping */
 .post img {
-  width: 100%;                 /* Full width of the post */
-  height: auto;                /* Maintain original aspect ratio */
-  max-height: 180px;           /* Constrain the height, adjust as needed */
-  object-fit: contain;         /* Scale the image up without cropping */
-  border-radius: 5px 5px 0 0;  /* Rounded corners at the top */
+  width: 100%;                             /* Full width of the post */
+  height: auto;                            /* Maintain original aspect ratio */
+  max-height: 180px;                       /* Constrain the height, adjust as needed */
+  object-fit: contain;                     /* Scale the image up without cropping */
+  border-radius: 5px 5px 0 0;              /* Rounded corners at the top */
 }
 
-/* Adds padding around the images inside each post */
-.post-image-container {
-  padding: 5px;            /* Adds space around the image */
-  background-color: white; /* Optional: Adds a background color around the image */
-  border-radius: 5px;      /* Optional: Adds rounded corners */
-  box-sizing: border-box;  /* Ensures padding is included in width calculations */
-}
-
-.post-image-container img {
-  width: 100%;   /* Ensures image fills container without distorting */
-  height: auto;  /* Maintains aspect ratio */
-}
-
-/* Container for post information, using flex to keep elements in one line */
+/* Container for post information */
 .post-info-container {
-  display: flex;
-  align-items: center;       /* Vertically centers items */
-  padding: 10px;
-  text-align: left;          /* Aligns text to the left */
-  gap: 5px;                  /* Reduces space between title, price, and city */
+  display: flex;                           /* Align items in one line */
+  align-items: center;                     /* Vertically centers items */
+  padding: 10px;                           /* Padding around info */
+  text-align: left;                        /* Align text to the left */
+  gap: 5px;                                /* Space between title, price, and city */
 }
 
 /* Style for the title */
 .post-title {
-  font-weight: bold;
-  color: #e65c00;
-  text-decoration: none;
-  white-space: nowrap;       /* Prevents wrapping */
-  overflow: hidden;          /* Truncates text if it’s too long */
-  text-overflow: ellipsis;   /* Adds ellipsis (…) if text is truncated */
-}
-
-/* Add underline on hover for the title */
-.post-title:hover {
-  text-decoration: underline;
+  font-weight: bold;                       /* Bold title */
+  color: #e65c00;                          /* Title color */
+  text-decoration: none;                   /* No underline */
+  white-space: nowrap;                     /* Prevents wrapping */
+  overflow: hidden;                        /* Truncates text if it’s too long */
+  text-overflow: ellipsis;                 /* Adds ellipsis if text is truncated */
 }
 
 /* Style for the price */
 .post-price {
-  background-color: #eee;
-  padding: 2px 5px;
-  border-radius: 3px;
-  font-weight: bold;
-  white-space: nowrap;
+  background-color: #eee;                 /* Background color for price */
+  padding: 2px 5px;                       /* Padding for price */
+  border-radius: 3px;                     /* Rounded corners */
+  font-weight: bold;                       /* Bold text */
+  white-space: nowrap;                     /* Prevents wrapping */
 }
 
 /* Style for the city */
 .post-city {
-  color: gray;
-  white-space: nowrap;
+  color: gray;                            /* Color for the city */
+  white-space: nowrap;                    /* Prevents wrapping */
 }
+
 
 #sell-something-button {
   position: fixed;              /* Keeps the button fixed in the viewport */
