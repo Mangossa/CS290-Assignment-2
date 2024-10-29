@@ -36,92 +36,68 @@ main.content {
   margin-left: 20px; /* Add space between the filter container and the left side of the screen */
 }
 
-/* Style for the filter container with a defined bottom */
+/* Style for the filter container */
 .filter-container {
-  background-color: lightgray;
-  padding: 20px;
-  margin-left: 10px;
-  margin-top: 10px;
-  max-width: 250px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-self: flex-start; /* Prevents stretching in the flex container */
-  max-height: 500px;      /* Adjusts maximum height as needed */
-  overflow-y: auto;       /* Allows scrolling if content exceeds max height */
-  box-sizing: border-box; /* Includes padding in height calculation */
-}
-
-/* Optional: Add padding to the bottom of the container */
-#filter-update-button {
-  margin-bottom: 10px;  /* Space below the button */
-}
-
-/* Optional: Add padding to the bottom of the container */
-#filter-update-button {
-  margin-bottom: 10px;  /* Space below the button */
-}
-
-/* Limit the height of the filter container's condition box */
-.filter-fieldset {
-  max-height: 200px;   /* Set a maximum height for the fieldset */
-  width: 200px; 
-  overflow-y: auto;    /* Allow scrolling if the content overflows */
-  padding: 10px;       /* Add padding inside the fieldset */
-  border: 1px solid #ccc; /* Add a border to the fieldset */
-  margin-top: 10px;    /* Add some space between the fieldset and other filter items */
+  background-color: lightgray;  /* Background color for the filter container */
+  padding: 20px;                /* Padding inside the container */
+  margin-left: 10px;            /* Left margin for spacing */
+  margin-top: 10px;             /* Top margin for spacing */
+  max-width: 250px;             /* Maximum width of the container */
+  display: flex;                /* Enables flexbox layout */
+  flex-direction: column;       /* Stacks children vertically */
+  justify-content: flex-start;  /* Aligns children at the start */
+  max-height: 500px;            /* Sets maximum height */
+  overflow-y: auto;             /* Allows vertical scrolling if content overflows */
+  box-sizing: border-box;       /* Includes padding and borders in the height and width calculations */
 }
 
 /* Style for the filter input container */
 .filter-input-container {
-  display: flex;           /* Use flex to align items horizontally */
-  align-items: center;     /* Vertically centers the items */
-  margin-bottom: 15px;     /* Adds space below each input container */
-  gap: 10px;               /* Space between the min and max input fields */
+  display: flex;                /* Aligns items horizontally */
+  align-items: center;          /* Vertically centers the items */
+  margin-bottom: 15px;          /* Space below each input container */
+  gap: 10px;                    /* Space between input fields */
 }
 
 /* Style for each input element */
-.filter-input-element {
-  margin-right: 10px;     /* Space between the min and max input boxes */
-}
-
-/* Adjust input fields for smaller width */
 .filter-input {
-  width: 60px;            /* Smaller width for the input fields */
+  width: 60px;                  /* Set width for input fields */
 }
 
 /* Style for filter input labels */
 .filter-input-label {
-  margin-right: 10px;     /* Space between the label and input box */
+  margin-right: 10px;           /* Space between the label and input box */
 }
 
-/* Style for the Condition fieldset */
+/* Style for the condition fieldset */
 .filter-fieldset {
-  border: 1px solid black;   /* Thin black border */
-  padding: 10px;             /* Adds space inside the border */
-  margin-top: 10px;          /* Optional: Space above the fieldset */
+  border: 1px solid black;      /* Thin black border */
+  padding: 10px;                /* Adds space inside the border */
+  margin-top: 10px;             /* Space above the fieldset */
+  width: 100%;                  /* Makes the fieldset take full width of the container */
+  max-height: 200px;            /* Set a maximum height for the fieldset */
+  overflow-y: auto;             /* Allows scrolling if content exceeds max height */
 }
 
 /* Style for the Update button */
 #filter-update-button {
-  width: 250px; 
-  padding: 10px;
-  margin-bottom: 20px;
-  background-color: black;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  font-weight: bold;
-  cursor: pointer;
+  width: 100%;                  /* Full width button */
+  padding: 10px;                /* Padding for button */
+  margin-top: 20px;             /* Space above the button */
+  background-color: black;      /* Button background color */
+  color: white;                 /* Button text color */
+  border: none;                 /* No border */
+  border-radius: 8px;          /* Rounded corners */
+  font-weight: bold;            /* Bold text */
+  cursor: pointer;              /* Cursor changes to pointer on hover */
 }
 
-/* Hover effect */
+/* Hover effect for the button */
 #filter-update-button:hover {
-  background-color: tan;       /* Tan background on hover */
-  color: black;                /* Black text on hover */
-  border: 1px solid black;     /* Black outline on hover */
+  background-color: tan;        /* Background color on hover */
+  color: black;                 /* Text color on hover */
+  border: 1px solid black;      /* Border on hover */
 }
-
 /* Flexbox layout for main content */
 main.content {
   display: flex;
