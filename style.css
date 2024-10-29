@@ -36,20 +36,19 @@ main.content {
   margin-left: 20px; /* Add space between the filter container and the left side of the screen */
 }
 
-/* Style for the filter container with a defined bottom */
+/* Style for the filter container with a fixed height */
 .filter-container {
   background-color: lightgray;
   padding: 20px;
   margin-left: 10px;
   margin-top: 10px;
   max-width: 250px;
+  height: 400px;           /* Set a fixed height */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-self: flex-start; /* Prevents stretching in the flex container */
-  max-height: 100px;      /* Adjusts maximum height as needed */
-  overflow-y: auto;       /* Allows scrolling if content exceeds max height */
-  box-sizing: border-box; /* Includes padding in height calculation */
+  align-self: flex-start;  /* Ensures container doesn't stretch */
+  box-sizing: border-box;  /* Include padding in height calculation */
 }
 
 /* Optional: Add padding to the bottom of the container */
