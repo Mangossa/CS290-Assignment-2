@@ -47,7 +47,7 @@ main.content {
   flex-direction: column;
   justify-content: flex-start;
   align-self: flex-start; /* Prevents stretching in the flex container */
-  max-height: 500px;      /* Adjusts maximum height as needed */
+  max-height: 100px;      /* Adjusts maximum height as needed */
   overflow-y: auto;       /* Allows scrolling if content exceeds max height */
   box-sizing: border-box; /* Includes padding in height calculation */
 }
