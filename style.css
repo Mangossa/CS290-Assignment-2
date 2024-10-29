@@ -36,7 +36,7 @@ main.content {
   margin-left: 20px; /* Add space between the filter container and the left side of the screen */
 }
 
-/* Style for the filter container with bottom border */
+/* Style for the filter container */
 .filter-container {
   background-color: lightgray;
   padding: 20px;
@@ -48,6 +48,7 @@ main.content {
   flex-direction: column;
   justify-content: flex-start;
 }
+
 /* Limit the height of the filter container's condition box */
 .filter-fieldset {
   max-height: 200px;   /* Set a maximum height for the fieldset */
@@ -58,29 +59,17 @@ main.content {
   margin-top: 10px;    /* Add some space between the fieldset and other filter items */
 }
 
-/* Style for the Update button with bottom margin */
-#filter-update-button {
-  width: 250px;
-  padding: 10px;
-  margin-bottom: 10px;          /* Space at the bottom of the filter container */
-  background-color: black;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-/* Style for each input element */
-.filter-input-element {
-  margin-right: 10px;     /* Space between the min and max input boxes */
-}
-
+/* Style for the filter input container */
 .filter-input-container {
   display: flex;           /* Use flex to align items horizontally */
   align-items: center;     /* Vertically centers the items */
   margin-bottom: 15px;     /* Adds space below each input container */
   gap: 10px;               /* Space between the min and max input fields */
+}
+
+/* Style for each input element */
+.filter-input-element {
+  margin-right: 10px;     /* Space between the min and max input boxes */
 }
 
 /* Adjust input fields for smaller width */
@@ -126,10 +115,10 @@ main.content {
   gap: 20px;                   /* Space between filter and posts section */
 }
 
-/* Posts section with 2-column grid layout */
+/* Posts section with responsive grid layout */
 #posts {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Force two columns */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
   gap: 20px;                             /* Space between each post */
   padding: 10px;                         /* Space around the posts grid */
 }
@@ -155,6 +144,7 @@ main.content {
   object-fit: contain;         /* Scale the image up without cropping */
   border-radius: 5px 5px 0 0;  /* Rounded corners at the top */
 }
+
 /* Adds padding around the images inside each post */
 .post-image-container {
   padding: 5px;            /* Adds space around the image */
@@ -167,6 +157,7 @@ main.content {
   width: 100%;   /* Ensures image fills container without distorting */
   height: auto;  /* Maintains aspect ratio */
 }
+
 /* Container for post information, using flex to keep elements in one line */
 .post-info-container {
   display: flex;
@@ -200,4 +191,3 @@ main.content {
   color: gray;
   white-space: nowrap;
 }
-
