@@ -1,4 +1,3 @@
-/* General style */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -10,201 +9,178 @@ header {
   font-family: 'Roboto Slab', serif;
   height: 80px;
   display: flex;
-  align-items: center;      /* Vertically centers items */
-  background-color: black;  /* Black box background */
-  padding: 10px;            /* Adds some padding inside the box */
-  color: white;             /* Ensures the text color is white */
+  align-items: center;
+  background-color: black;
+  padding: 10px;
+  color: white;
 }
 
-/* Image container adjustments */
 .header-image-container img {
-  max-width: 100px;   /* Adjust the size of the image */
-  height: auto;       /* Maintain image aspect ratio */
-  margin-right: 20px; /* Space between the image and the text */
+  max-width: 100px;
+  height: auto;
+  margin-right: 20px;
 }
 
-/* Style the title */
 .site-title a {
-  color: white;        /* Text color for the link */
-  text-decoration: none; /* Removes the underline */
-  font-size: 48px;      /* Adjust font size */
+  color: white;
+  text-decoration: none;
+  font-size: 48px;
 }
 
-/* Main content area with flex layout */
 main.content {
   display: flex;
-  margin-left: 20px; /* Add space between the filter container and the left side of the screen */
+  margin-left: 20px;
 }
 
-/* Style for the filter container */
 .filter-container {
-  background-color: lightgray;  /* Background color for the filter container */
-  padding: 20px;                /* Padding inside the container */
-  margin-left: 10px;            /* Left margin for spacing */
-  margin-top: 10px;             /* Top margin for spacing */
-  max-width: 250px;             /* Maximum width of the container */
-  display: flex;                /* Enables flexbox layout */
-  flex-direction: column;       /* Stacks children vertically */
-  justify-content: flex-start;  /* Aligns children at the start */
-  max-height: 500px;            /* Sets maximum height */
-  overflow-y: auto;             /* Allows vertical scrolling if content overflows */
-  box-sizing: border-box;       /* Includes padding and borders in the height and width calculations */
+  background-color: lightgray;
+  padding: 20px;
+  margin-left: 10px;
+  margin-top: 10px;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-height: 500px;
+  overflow-y: auto;
+  box-sizing: border-box;
 }
 
-/* Style for the filter input container */
 .filter-input-container {
-  display: flex;                /* Aligns items horizontally */
-  align-items: center;          /* Vertically centers the items */
-  margin-bottom: 15px;          /* Space below each input container */
-  gap: 10px;                    /* Space between input fields */
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  gap: 10px;
 }
 
-/* Style for each input element */
 .filter-input {
-  width: 60px;                  /* Set width for input fields */
-  max-width: 100%;              /* Ensures the input doesn't exceed the container's width */
-  box-sizing: border-box;       /* Includes padding and borders in width calculations */
+  width: 60px;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
-/* Style for filter input labels */
 .filter-input-label {
-  margin-right: 10px;           /* Space between the label and input box */
+  margin-right: 10px;
 }
 
-/* Style for the condition fieldset */
 .filter-fieldset {
-  border: 1px solid black;      /* Thin black border */
-  padding: 10px;                /* Adds space inside the border */
-  margin-top: 10px;             /* Space above the fieldset */
-  width: 100%;                  /* Makes the fieldset take full width of the container */
-  max-height: 200px;            /* Set a maximum height for the fieldset */
-  overflow-y: auto;             /* Allows scrolling if content exceeds max height */
-  box-sizing: border-box;       /* Ensures padding is included in width calculations */
+  border: 1px solid black;
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  box-sizing: border-box;
 }
 
-/* Style for the Update button */
 #filter-update-button {
-  width: 100%;                  /* Full width button */
-  padding: 10px;                /* Padding for button */
-  margin-top: 20px;             /* Space above the button */
-  background-color: black;      /* Button background color */
-  color: white;                 /* Button text color */
-  border: none;                 /* No border */
-  border-radius: 8px;          /* Rounded corners */
-  font-weight: bold;            /* Bold text */
-  cursor: pointer;              /* Cursor changes to pointer on hover */
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-/* Hover effect for the button */
 #filter-update-button:hover {
-  background-color: tan;        /* Background color on hover */
-  color: black;                 /* Text color on hover */
-  border: 1px solid black;      /* Border on hover */
+  background-color: tan;
+  color: black;
+  border: 1px solid black;
 }
-/* Flexbox layout for main content */
+
 main.content {
   display: flex;
-  gap: 20px;                   /* Space between filter and posts section */
+  gap: 20px;
 }
-/* Posts section with responsive grid layout */
+
 #posts {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive columns */
-  gap: 20px;                             /* Space between each post */
-  padding: 10px;                         /* Space around the posts grid */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 10px;
 }
 
-/* Style each post */
 .post {
-  height: 350px;                          /* Fixed height */
-  background-color: white;                /* Background color for each post */
-  border: 1px solid #ddd;                 /* Border around each post */
-  border-radius: 5px;                     /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
-  overflow: hidden;                        /* Ensures content stays within the card */
-  display: flex;                          /* Flexbox for internal layout */
-  flex-direction: column;                 /* Stack children vertically */
+  height: 350px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
-/* Image styles */
 .post img {
-  width: 100%;                            /* Full width of the post */
-  height: auto;                           /* Maintain original aspect ratio */
-  max-height: 180px;                      /* Constrain height as needed */
-  object-fit: contain;                    /* Scale image without cropping */
-  border-radius: 5px 5px 0 0;             /* Rounded corners at the top */
+  width: 100%;
+  height: auto;
+  max-height: 180px;
+  object-fit: contain;
+  border-radius: 5px 5px 0 0;
 }
 
-/* Container for images inside each post */
 .post-image-container {
-  padding: 5px;                           /* Space around the image */
-  background-color: white;                /* Background color for the image container */
-  border-radius: 5px;                     /* Optional: Adds rounded corners */
-  box-sizing: border-box;                 /* Ensures padding is included in width calculations */
+  padding: 5px;
+  background-color: white;
+  border-radius: 5px;
+  box-sizing: border-box;
 }
 
-/* Image inside the image container */
 .post-image-container img {
-  width: 100%;                            /* Ensures image fills container without distorting */
-  height: auto;                           /* Maintains aspect ratio */
+  width: 100%;
+  height: auto;
 }
 
-/* Container for post information */
 .post-info-container {
-  display: flex;                          /* Align items in one line */
-  align-items: center;                    /* Vertically centers items */
-  padding: 10px;                          /* Padding around info */
-  text-align: left;                       /* Align text to the left */
-  gap: 5px;                               /* Space between title, price, and city */
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  text-align: left;
+  gap: 5px;
 }
 
-/* Title styling */
 .post-title {
-  font-weight: bold;                      /* Bold title */
-  color: #e65c00;                         /* Title color */
-  text-decoration: none;                  /* No underline */
-  white-space: nowrap;                    /* Prevents wrapping */
-  overflow: hidden;                       /* Truncates text if it’s too long */
-  text-overflow: ellipsis;                /* Adds ellipsis if text is truncated */
+  font-weight: bold;
+  color: #e65c00;
+  text-decoration: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-/* Add underline on hover for the title */
 .post-title:hover {
-  text-decoration: underline;              /* Underline effect on hover */
+  text-decoration: underline;
 }
 
-/* Price styling */
 .post-price {
-  background-color: #eee;                 /* Background color for price */
-  padding: 2px 5px;                       /* Padding for price */
-  border-radius: 3px;                     /* Rounded corners */
-  font-weight: bold;                       /* Bold text */
-  white-space: nowrap;                     /* Prevents wrapping */
+  background-color: #eee;
+  padding: 2px 5px;
+  border-radius: 3px;
+  font-weight: bold;
+  white-space: nowrap;
 }
 
-/* City styling */
 .post-city {
-  color: gray;                            /* Color for the city */
-  white-space: nowrap;                    /* Prevents wrapping */
+  color: gray;
+  white-space: nowrap;
 }
-
-
 
 #sell-something-button {
-  position: fixed;              /* Keeps the button fixed in the viewport */
-  bottom: 20px;                /* Distance from the bottom of the viewport */
-  right: 20px;                 /* Distance from the right of the viewport */
-  width: 60px;                 /* Width of the button (adjustable) */
-  height: 60px;                /* Height of the button (adjustable) */
-  background-color: orange;    /* Background color of the button */
-  color: white;                /* Color of the plus sign */
-  border: none;                /* Removes the default border */
-  border-radius: 50%;          /* Makes the button circular */
-  display: flex;               /* Use flexbox for centering */
-  justify-content: center;      /* Center content horizontally */
-  align-items: center;          /* Center content vertically */
-  font-size: 24px;             /* Size of the plus sign */
-  cursor: pointer;              /* Changes cursor to pointer on hover */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow effect */
-  transition: background-color 0.3s; /* Smooth transition for background color */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
 }
