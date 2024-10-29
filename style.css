@@ -109,7 +109,7 @@ main.content {
 /* Posts section with responsive grid layout */
 #posts {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive columns */
   gap: 20px;                             /* Space between each post */
   padding: 10px;                         /* Space around the posts grid */
 }
