@@ -65,16 +65,22 @@ main.content {
   margin-left: 10px;
   margin-top: 10px;
   max-width: 250px;
-  height: auto;              /* Let the container adjust based on content */
+  height: auto;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Align items at the top */
-  align-self: flex-start;      /* Prevents stretching in the flex container */
+  justify-content: flex-start;
 }
 
 /* Style for each input element */
 .filter-input-element {
   margin-right: 10px;     /* Space between the min and max input boxes */
+}
+
+.filter-input-container {
+  display: flex;           /* Use flex to align items horizontally */
+  align-items: center;     /* Vertically centers the items */
+  margin-bottom: 15px;     /* Adds space below each input container */
+  gap: 10px;               /* Space between the min and max input fields */
 }
 
 /* Adjust input fields for smaller width */
